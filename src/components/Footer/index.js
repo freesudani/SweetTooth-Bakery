@@ -25,6 +25,7 @@ function Footer() {
                 target="_blank"
                 aria-label="Facebook"
                 rel="noopener noreferrer"
+                facebook
               >
                 <FaFacebook />
               </SocialIconLink>
@@ -33,6 +34,7 @@ function Footer() {
                 target="_blank"
                 aria-label="Instagram"
                 rel="noopener noreferrer"
+                instagram
               >
                 <FaInstagram />
               </SocialIconLink>
@@ -41,6 +43,7 @@ function Footer() {
                 target="_blank"
                 aria-label="Facebook"
                 rel="noopener noreferrer"
+                youtube
               >
                 <FaYoutube />
               </SocialIconLink>
@@ -49,6 +52,7 @@ function Footer() {
                 target="_blank"
                 aria-label="Facebook"
                 rel="noopener noreferrer"
+                twitter
               >
                 <FaTwitter />
               </SocialIconLink>

@@ -18,6 +18,12 @@ function Products({ heading, data }) {
       <ProductsHeading>{heading}</ProductsHeading>
       <ProductWrapper>
         {data.map((product, index) => {
+          const [dollars, cents] = product.price.split(".");
+          if (cents) {
+            if (cents.length === 1) {
+              product.price = `${dollars}.${cents}0`;
+            }
+          }
           return (
             <ProductCard key={index}>
               <ProductImg src={product.img} alt={product.alt} />
