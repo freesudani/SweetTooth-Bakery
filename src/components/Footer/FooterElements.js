@@ -1,54 +1,63 @@
-import styled from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  background-color: #0d0909;
+	background-color: #0d0909;
 `;
 
 export const FooterWrap = styled.div`
-  padding: 16px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1300px;
-  margin: 0 auto;
+	padding: 16px 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 1300px;
+	margin: 0 auto;
 `;
 
 export const SocialMedia = styled.section`
-  max-width: 1300px;
-  width: 100%;
+	max-width: 1300px;
+	width: 100%;
 `;
 
 export const SocialMediaWrap = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 16px auto 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1100px;
+	margin: 16px auto 0 auto;
 
-  @media screen and (max-width: 820px) {
-    flex-direction: column;
-  }
+	@media screen and (max-width: 820px) {
+		flex-direction: column;
+	}
 `;
 
 export const CopyRight = styled.p`
-  color: #fff;
-  justify-self: start;
-  text-decoration: none;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
+	color: #fff;
+	justify-self: start;
+	text-decoration: none;
+	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
 `;
 
 export const SocialIcons = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 240px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 240px;
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
-  font-size: 24px;
+	color: #fff;
+	font-size: 24px;
+  transition: color 0.3s;
+
+	${(props) =>
+		props.facebook &&
+		css` 
+			&:hover {
+				color: #3b5998;
+			}
+		`}
 `;
